@@ -1,0 +1,14 @@
+[user]
+  email = lukas@stylianou.info
+	name = lukas235
+[merge]
+  tool = vimdiff
+[mergetool]
+  prompt = true
+	keepBackup = false
+[mergetool "vimdiff"]
+  cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+[difftool]
+  prompt = false
+[diff]
+  tool = vimdiff
