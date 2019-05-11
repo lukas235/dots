@@ -37,4 +37,5 @@ export GSETTINGS_SCHEMA_DIR=/usr/share/glib-2.0/schemas/
 export HISTSIZE=5000
 export HISTFILESIZE=5000
 export PS1="\e[0;31m\u \W:\e[m "
+export DISPLAY_BRIGTHNESS=100
 

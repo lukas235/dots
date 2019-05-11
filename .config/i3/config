@@ -53,6 +53,7 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
+bindsym XF86Display exec "~/scripts/backlight.sh"
 
 # Audio
 # bindsym XF86AudioMute exec "amixer sset Master toggle -q"
