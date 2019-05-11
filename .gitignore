@@ -5,6 +5,7 @@
 !.config/i3status/
 !.config/i3status/config
 !.config/nvim/init.nvim
+!.config/i3-scrot.conf
 !.scripts/
 !.scripts/backlight.sh
 !.bash_profile
