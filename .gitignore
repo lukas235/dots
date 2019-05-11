@@ -1,0 +1,15 @@
+*
+!.config/
+!.config/i3/
+!.config/i3/config
+!.config/i3status/
+!.config/i3status/config
+!.config/nvim/init.nvim
+!.bash_profile
+!.bashrc
+!.dir_colors
+!.gitconfig
+!.gitignore
+!.vimrc
+!.xinitrc
+!.Xresources
