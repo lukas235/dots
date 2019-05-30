@@ -40,3 +40,13 @@ export HISTFILESIZE=5000
 export PS1="\\[\e[0;31m\\]\u \W:\\[\e[m\\] "
 export DISPLAY_BRIGTHNESS=100
 
+# # fzf with fd for super fast fuzzy searching
+# export FZF_DEFAULT_COMMAND='fd --hidden --type f --exclude={.git,.cache,Music}'
+# # export FZF_DEFAULT_OPTS='--ansi'
+# export FZF_CTRL_T_COMMAND='fd --hidden --type f --exclude ".git"'
+# export FZF_ALT_C_COMMAND='fd --hidden --type d --exclude ".git"'
+# 
+# # fzf
+# [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+

@@ -5,7 +5,8 @@ general {
 }
 
 order += "disk /"
-order += "run_watch DHCP"
+order += "disk /home"
+order += "disk /var"
 order += "wireless wlp3s0"
 order += "ethernet eth0"
 order += "battery 0"
@@ -76,8 +77,16 @@ cpu_temperature 0 {
         path = "/sys/devices/platform/coretemp.0/temp1_input"
 }
 
+disk "/home" {
+        format = " %free [home]"
+}
+
 disk "/" {
-        format = " %free"
+        format = " %free [root]"
+}
+
+disk "/var" {
+        format = " %free [var]"
 }
 
 volume master {

@@ -56,9 +56,11 @@ bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness 
 bindsym XF86Display exec "~/scripts/backlight.sh"
 
 # Audio
-# bindsym XF86AudioMute exec "amixer sset Master toggle -q"
-# bindsym XF86AudioRaiseVolume exec "amixer sset Master 5%+ unmute -q"
-# bindsym XF86AudioLowerVolume exec "amixer sset Master 5%- unmute -q"
+
+bindsym XF86AudioMute exec "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+bindsym XF86AudioRaiseVolume exec "pactl set-sink-volume @DEFAULT_SINK@ +1000"
+bindsym XF86AudioLowerVolume exec "pactl set-sink-volume @DEFAULT_SINK@ -1000"
+# bindsym XF86MicMute exec "amixer sset Capture toggle -q"
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
@@ -305,8 +307,8 @@ exec xset r rate 250 30
 exec --no-startup-id blueman-applet
 
 # Touchpad controls
-exec_always xinput set-prop 12 286 1 # enable tapping
-exec_always xinput set-prop 12 306 0.3
+exec_always xinput set-prop "Synaptics TM3075-002" "libinput Tapping Enabled" 1 
+exec_always xinput set-prop "Synaptics TM3075-002" "libinput Accel Speed" 0.3
 
 exec_always xset m 5 10
 exec setxkbmap -model thinkpad -layout de -variant nodeadkeys -option caps:swapescape
@@ -445,4 +447,4 @@ mode "$mode_gaps_outer" {
 }
 
 # Background
-# exec_always feh --bg-center ~/Pictures/bg.jpg
+exec_always feh --bg-scale ~/Nextcloud/Pictures/2001.jpg
