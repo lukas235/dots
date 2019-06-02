@@ -26,7 +26,7 @@ alias cp='cp -i'
 alias df='df -h'
 alias fdisk='sudo fdisk -l'
 alias terminal='urxvt'
-alias pk='makepkg -si'
+alias pkg='makepkg -si'
 
 export VISUAL=vim
 export EDITOR=vim

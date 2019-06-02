@@ -5,6 +5,8 @@
 !.config/i3status/
 !.config/i3status/config
 !.config/nvim/init.nvim
+!.config/ranger/
+!.config/ranger/rc.conf
 !.config/i3-scrot.conf
 !.scripts/
 !.scripts/backlight.sh
