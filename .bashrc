@@ -8,6 +8,7 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
+alias fucking='sudo'
 alias ls='ls --color=auto --group-directories-first'
 alias la='ls -la'
 alias ll='ls -l'
@@ -48,5 +49,6 @@ export DISPLAY_BRIGTHNESS=100
 # 
 # # fzf
 # [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+. /usr/share/fzf/key-bindings.bash
 
 
