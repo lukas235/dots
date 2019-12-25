@@ -11,6 +11,7 @@ set autoread
 " Modern search
 set incsearch
 set hlsearch
+set ignorecase
 
 " Show matching brackets
 set showmatch
@@ -18,6 +19,7 @@ set mat=2
 
 " Appearance
 set number
+set relativenumber
 "set ruler
 
 " No insert/normal etc bc we have airline
@@ -52,18 +54,18 @@ let g:syntastic_check_on_wq=0
 
 " Gruv
 "let g:gruvbox_contrast_dark='soft'
-let g:gruvbox_contrast_light='hard'
+"let g:gruvbox_contrast_light='hard'
 "let g:gruvbox_italic=1
 "let g:solarized_termtrans=1
 "let g:solarized_contrast="normal"
 "let g:solarized_visibility="normal"
 colorscheme solarized
-set background=light
+set background=dark
 "highlight Normal ctermbg=None
 
 map <C-n> :NERDTreeToggle<CR>
 call plug#begin()
-Plug 'morhetz/gruvbox'
+"Plug 'morhetz/gruvbox'
 Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'

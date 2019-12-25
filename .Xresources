@@ -104,13 +104,13 @@ Xcursor.size:                     0
 ! URxvt.font: xft:Droid\ Sans\ Mono\ for\ Powerline:size=11:style=Regular
 ! URxvt.font: xft:Fantasque\ Sans\ Mono:size=12:style=Regular
 ! URxvt.font: xft:Fantasque\ Sans\ Mono:size=12:style=Regular,9x15,xft:TerminessTTFNerdFontMono,xft:DejaVu\ Sans:pixelsize=12,xft:Symbola,xft:Noto Emoji:minspace=False
-!URxvt.font: Noto\ Mono\ for\ Powerline:size=12:style=Regular,xft:TerminessTTFNerdFontMono,xft:DejaVu\ Sans:pixelsize=12,xft:Symbola,xft:Noto Emoji:minspace=False
+! URxvt.font: xft:TerminessTTFNerdFontMono,xft:DejaVu\ Sans:pixelsize=12,xft:Symbola,xft:Noto Emoji:minspace=False
 !URxvt.boldFont: xft:Fantasque\ Sans\ Mono:size=12:style=Bold,9x15,xft:TerminessTTFNerdFontMono,xft:DejaVu\ Sans:style=Bold:pixelsize=12,xft:Symbola,xft:Noto Emoji:minspace=False
 !URxvt.boldFont: Noto\ Mono\ for\ Powerline:size=12:style=Regular,xft:TerminessTTFNerdFontMono,xft:DejaVu\ Sans:style=Bold:pixelsize=12,xft:Symbola,xft:Noto Emoji:minspace=False
 ! URxvtfont: xft:Inconsolata Nerd Font Mono:pixelsize=27:minspace=False, xft:DejaVu Sans:pixelsize=18 URxvtboldFont: xft:Inconsolata Nerd Font Mono:pixelsize=27:minspace=False, xft:DejaVu Sans:pixelsize=18 URxvt*letterSpace: 0
 !URxvt.font:                       9x15,xft:TerminessTTFNerdFontMono
 ! URxvt.font: xft:Ubuntu\ Mono\ derivative\ Powerline:size=15:style=Regular
-! URxvt.letterSpace: 0
+! URxvt.letterSpace: 1
 URxvt.font: xft:Noto\ Mono\ for\ Powerline:size=12:style=Regular,xft:TerminessTTFNerdFontMono,xft:DejaVu\ Sans:pixelsize=12
 ! alternative font settings with 'terminus':
 ! URxvt.font:      -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1

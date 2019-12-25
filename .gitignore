@@ -7,6 +7,8 @@
 !.config/nvim/init.nvim
 !.config/ranger/
 !.config/ranger/rc.conf
+!.config/termite/
+!.config/termite/config
 !.config/i3-scrot.conf
 !.scripts/
 !.scripts/backlight.sh
