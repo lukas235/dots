@@ -347,6 +347,25 @@ set_from_resource $term_color13    color13
 set_from_resource $term_color14    color14
 set_from_resource $term_color15    color15
 
+# def solarized colors
+set $base03     #002b36
+set $base02     #073642
+set $base01     #586e75
+set $base00     #657b83
+set $base0      #839496
+set $base1      #93a1a1
+set $base2      #eee8d5
+set $base3      #fdf6e3
+set $yellow     #b58900
+set $orange     #cb4b16
+set $red        #dc322f
+set $magenta    #d33682
+set $violet     #6c71c4
+set $blue       #268bd2
+set $cyan       #2aa198
+set $green      #859900
+
+
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
 	i3bar_command i3bar
@@ -363,16 +382,16 @@ bar {
 	strip_workspace_numbers yes
 
     colors {
-        background #222D31
-        statusline #F9FAF9
-        separator  #454947
+        background $base02
+        statusline $base0
+        separator  $base01
 
 #                      border  backgr. text
-        focused_workspace  #F9FAF9 #16a085 #292F34
-        active_workspace   #595B5B #353836 #FDF6E3
-        inactive_workspace #595B5B #222D31 #EEE8D5
-        binding_mode       #16a085 #2C2C2C #F9FAF9
-        urgent_workspace   #16a085 #FDF6E3 #E5201D
+        focused_workspace  $base0 $base01 $base03
+        active_workspace   $green $base03 $base0 
+        inactive_workspace $base01 $base03 $base0
+        binding_mode       $cyan $base03 $base0
+        urgent_workspace   $magenta $base03 $base0
     }
 }
 
