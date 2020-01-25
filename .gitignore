@@ -12,6 +12,7 @@
 !.config/i3-scrot.conf
 !.scripts/
 !.scripts/backlight.sh
+!.scripts/dmenu_recent
 !.bash_profile
 !.bashrc
 !.dir_colors
@@ -20,3 +21,5 @@
 !.vimrc
 !.xinitrc
 !.Xresources
+!.zprofile
+!.zshrc
