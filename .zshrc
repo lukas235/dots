@@ -92,6 +92,7 @@ alias l='ls'
 alias venv='python3 -m venv'    
 alias vim='nvim'    
 alias vi='vim'    
+alias v='nvim'
 alias pac='sudo pacman'    
 alias shutdown='shutdown now'    
 alias suspend='systemctl suspend'    
@@ -104,6 +105,7 @@ alias df='df -h'
 alias fdisk='sudo fdisk -l'    
 alias terminal='termite'
 alias pkg='makepkg -si'    
+alias ar='autorandr && autorandr -c'
 
 alias gs='git status'
 alias gc='git commit'
@@ -130,3 +132,10 @@ export FZF_CTRL_T_COMMAND='fd --hidden --type f --exclude ".git"'
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 . /usr/share/fzf/key-bindings.zsh
+
+# start nvm
+source /usr/share/nvm/init-nvm.sh
+
+#if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+#  exec startx
+#fi

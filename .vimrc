@@ -45,6 +45,9 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+" Key Maps
+vnoremap Y "+y
+
 
 " Syntastic
 let g:syntastic_always_populate_loc_list=1
@@ -74,5 +77,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'Yggdroot/indentLine'
 Plug 'vim-syntastic/syntastic'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'vimwiki/vimwiki'
 call plug#end()
 

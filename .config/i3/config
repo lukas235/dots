@@ -211,7 +211,7 @@ for_window [class="Lxappearance"] floating enable sticky enable border normal
 for_window [class="Pavucontrol"] floating enable
 for_window [class="qt5ct"] floating enable sticky enable border normal
 for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
-for_window [class="Skype"] floating enable border normal
+# for_window [class="Skype"] floating enable border normal
 # for_window [class="(?i)virtualbox"] floating enable border normal
 
 # switch to workspace with urgent window automatically
@@ -268,14 +268,15 @@ mode "resize" {
 }
 
 # Lock screen
-bindsym $mod+9 exec --no-startup-id i3lock -c 000000
+#bindsym $mod+9 exec --no-startup-id i3lock -c 000000
+bindsym $mod+9 exec --no-startup-id ~/scripts/i3lock.sh
 
 # Touchpad controls
-exec xset r rate 250 30
+exec_always xset r rate 250 30
 exec_always xset m 5 10
 exec_always xinput set-prop "Synaptics TM3075-002" "libinput Tapping Enabled" 1 
 exec_always xinput set-prop "Synaptics TM3075-002" "libinput Accel Speed" 0.3
-exec setxkbmap -model thinkpad -layout de -variant nodeadkeys -option caps:swapescape
+exec_always setxkbmap -model thinkpad -layout de -variant nodeadkeys -option caps:swapescape
 
 # Autostart applications
 exec --no-startup-id nm-applet
@@ -283,6 +284,7 @@ exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
 exec --no-startup-id i3-battery-popup -m "Akku leer"
 exec --no-startup-id redshift-gtk
+exec --no-startup-id keepassxc
 # exec nextcloud
 
 # Color palette used for the terminal ( ~/.Xresources file )
@@ -435,4 +437,4 @@ mode "$mode_gaps_outer" {
 }
 
 # Background
-exec_always feh --bg-scale ~/Nextcloud/Pictures/2001.jpg
+# exec_always feh --bg-scale ~/Downloads/m2.jpg
