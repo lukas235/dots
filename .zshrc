@@ -114,10 +114,12 @@ alias .='source'
 
 alias gs='git status'
 alias gc='git commit'
+alias gcm='git commit -m'
 alias gps='git push'
 alias gpl='git pull'
 alias gl='git log --oneline'
 alias ga='git add'
+alias gal='git add .'
 
 # colors
 alias diff='diff --color=auto'
