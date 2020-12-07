@@ -13,6 +13,7 @@
 !.scripts/
 !.scripts/backlight.sh
 !.scripts/dmenu_recent
+!.scripts/i3_lock.sh
 !.bash_profile
 !.bashrc
 !.dir_colors
