@@ -13,7 +13,7 @@
 [diff]
   tool = vimdiff
 [credential]
-	helper = /usr/share/git/credential/gnome-keyring/git-credential-gnome-keyring
+	helper = /usr/share/git/credential/libsecret/git-credential-libsecret
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
