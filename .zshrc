@@ -89,6 +89,8 @@ alias ls='ls --color=auto --group-directories-first'
 alias la='ls -la'    
 alias ll='ls -l'    
 alias l='ls'    
+alias lh='ls -lh'
+alias lah='ls -lah'
 alias venv='python3 -m venv'    
 alias vim='nvim'    
 alias vi='vim'    
@@ -108,10 +110,13 @@ alias pkg='makepkg -si'
 alias ar='autorandr && autorandr -c'
 alias cd..='cd ..'
 alias ..='cd ..'
+alias ...='cd ../..'
 alias wol='wakeonlan'
 alias wn='wol 00:11:32:CF:D5:47'
 alias .='source'
+alias foldersize='du -h --max-depth=1'
 
+# git
 alias gs='git status'
 alias gc='git commit'
 alias gcm='git commit -m'
@@ -145,4 +150,11 @@ source /usr/share/nvm/init-nvm.sh
 
 #if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
 #  exec startx
+#fi
+
+#if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+#    ssh-agent -t 1h > "$XDG_RUNTIME_DIR/ssh-agent.env"
+#fi
+#if [[ ! "$SSH_AUTH_SOCK" ]]; then
+#    source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
 #fi

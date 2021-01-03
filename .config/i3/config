@@ -214,6 +214,7 @@ for_window [class="Lxappearance"] floating enable sticky enable border normal
 for_window [class="Pavucontrol"] floating enable
 for_window [class="qt5ct"] floating enable sticky enable border normal
 for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
+for_window [class="KeePassXC"] floating enable
 # for_window [class="Skype"] floating enable border normal
 # for_window [class="(?i)virtualbox"] floating enable border normal
 
@@ -280,6 +281,7 @@ exec_always xset m 5 10
 exec_always xinput set-prop "Synaptics TM3075-002" "libinput Tapping Enabled" 1 
 exec_always xinput set-prop "Synaptics TM3075-002" "libinput Accel Speed" 0.3
 exec_always setxkbmap -model thinkpad -layout de -variant nodeadkeys -option caps:swapescape
+exec_always --no-startup-id solaar config 1 fn-swap 0
 
 # Screen DPMS Settings (check with xset q)
 # exec_always xset s off
@@ -293,10 +295,11 @@ exec --no-startup-id nm-applet
 exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
 exec --no-startup-id i3-battery-popup -m "Akku leer"
-exec --no-startup-id redshift-gtk
+#exec --no-startup-id redshift-gtk
+#exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id keepassxc
-exec --no-startup-id solaar config 1 fn-swap 0
 # exec nextcloud
+exec autorandr -c
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
