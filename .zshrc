@@ -1,6 +1,7 @@
 #
 # ~/.zshrc
 #
+#set -x
 export PATH=$PATH:~/bin
 export OPENER=rifle
 export EDITOR=nvim
@@ -83,52 +84,7 @@ setopt extended_history
 setopt complete_aliases
 
 # aliases
-alias please='sudo'    
-alias fucking='sudo'    
-alias ls='ls --color=auto --group-directories-first'    
-alias la='ls -la'    
-alias ll='ls -l'    
-alias l='ls'    
-alias lh='ls -lh'
-alias lah='ls -lah'
-alias venv='python3 -m venv'    
-alias vim='nvim'    
-alias vi='vim'    
-alias v='nvim'
-alias pac='sudo pacman'    
-alias shutdown='shutdown now'    
-alias suspend='systemctl suspend'    
-alias r='ranger'    
-alias open='rifle'
-alias o='rifle'
-alias mkd='mkdir -pv'    
-alias cp='cp -i'    
-alias df='df -h'    
-alias fdisk='sudo fdisk -l'    
-alias terminal='termite'
-alias pkg='makepkg -si'    
-alias ar='autorandr && autorandr -c'
-alias cd..='cd ..'
-alias ..='cd ..'
-alias ...='cd ../..'
-alias wol='wakeonlan'
-alias wn='wol 00:11:32:CF:D5:47'
-alias .='source'
-alias foldersize='du -h --max-depth=1'
-
-# git
-alias gs='git status'
-alias gc='git commit'
-alias gcm='git commit -m'
-alias gps='git push'
-alias gpl='git pull'
-alias gl='git log --oneline'
-alias ga='git add'
-alias gal='git add .'
-
-# colors
-alias diff='diff --color=auto'
-alias grep='grep --color=auto'    
+source $HOME/.zsh_aliases
 
 # for pacman: https://wiki.archlinux.org/index.php/Color_output_in_console#pacman
 # uncomment Color in /etc/pacman.conf
@@ -158,6 +114,7 @@ source /usr/share/nvm/init-nvm.sh
 #if [[ ! "$SSH_AUTH_SOCK" ]]; then
 #    source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
 #fi
+#eval "$(ssh-agent)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

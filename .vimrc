@@ -59,7 +59,7 @@ let g:syntastic_check_on_wq=0
 "let g:gruvbox_contrast_dark='soft'
 "let g:gruvbox_contrast_light='hard'
 "let g:gruvbox_italic=1
-"let g:solarized_termtrans=1
+let g:solarized_termtrans=1
 "let g:solarized_contrast="normal"
 "let g:solarized_visibility="normal"
 colorscheme solarized

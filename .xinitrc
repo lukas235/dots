@@ -36,4 +36,7 @@ fi
 # eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 # export SSH_AUTH_SOCK
 
+# polkit
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
 exec i3
