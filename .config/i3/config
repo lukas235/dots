@@ -195,14 +195,14 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 assign [class="Thunderbird"] $ws2
 # assign [class="Pcmanfm"] $ws3
 # assign [class="Skype"] $ws5
-assign [class="Spotify"] $ws5
-for_window[class="Spotify"] move to workspace $ws5
+# assign [class="Spotify"] $ws5
+# for_window[class="Spotify"] move to workspace $ws5
 
 # Autostart application in certain workspace
 exec --no-startup-id i3-msg 'workspace $ws2; exec /usr/bin/thunderbird'
 exec --no-startup-id i3-msg 'workspace $ws1; exec /usr/bin/firefox'
 # exec --no-startup-id i3-msg 'workspace $ws5; exec /usr/bin/spotify'
-exec --no-startup-id spotify
+# exec --no-startup-id spotify
 
 # Open specific applications in floating mode
 for_window [title="Bluetooth Devices"] floating enable border pixel 1
@@ -218,6 +218,7 @@ for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
 for_window [class="KeePassXC"] floating enable
 for_window [class="Solaar"] floating enable
 for_window [class="Network Connections"] floating enable
+for_window [class="SimpleScreenRecorder"] floating enable
 # for_window [class="Skype"] floating enable border normal
 # for_window [class="(?i)virtualbox"] floating enable border normal
 
@@ -281,10 +282,10 @@ bindsym $mod+9 exec --no-startup-id ~/scripts/i3lock.sh
 # Touchpad controls
 exec_always xset r rate 250 30
 exec_always xset m 5 10
-exec_always xinput set-prop "Synaptics TM3075-002" "libinput Tapping Enabled" 1 
-exec_always xinput set-prop "Synaptics TM3075-002" "libinput Accel Speed" 0.3
+# exec_always xinput set-prop "Synaptics TM3075-002" "libinput Tapping Enabled" 1 
+# exec_always xinput set-prop "Synaptics TM3075-002" "libinput Accel Speed" 0.3
 exec_always xinput set-prop "pointer:Logitech MX Ergo" "libinput Accel Speed" 1
-exec_always setxkbmap -model thinkpad -layout de -variant nodeadkeys -option caps:swapescape
+#exec_always setxkbmap -model thinkpad -layout de -variant nodeadkeys -option caps:swapescape
 exec_always --no-startup-id solaar config "Keyboard K400 Plus" fn-swap 0
 
 # Screen DPMS Settings (check with xset q)
@@ -296,14 +297,14 @@ exec_always --no-startup-id solaar config "Keyboard K400 Plus" fn-swap 0
 # In this case you’d end up with an hourglass mouse pointer for 60 seconds.
 # See: https://faq.i3wm.org/question/561/what-is-that-thing-called-no-startup-id/index.html
 exec --no-startup-id nm-applet
-exec --no-startup-id clipit
+exec --no-startup-id parcellite
 exec --no-startup-id blueman-applet
 exec --no-startup-id i3-battery-popup -m "Akku leer"
 #exec --no-startup-id redshift-gtk
 #exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
-exec --no-startup-id keepassxc
+# exec --no-startup-id keepassxc /home/ls/Nextcloud/23.kdbx
 # exec nextcloud
-exec autorandr -c
+exec_always autorandr -c
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:

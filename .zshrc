@@ -1,7 +1,8 @@
 #
 # ~/.zshrc
 #
-#set -x
+
+set -o vi
 export PATH=$PATH:~/bin
 export OPENER=rifle
 export EDITOR=nvim
@@ -103,6 +104,11 @@ export FZF_CTRL_T_COMMAND='fd --hidden --type f --exclude ".git"'
 
 # start nvm
 source /usr/share/nvm/init-nvm.sh
+
+# use Esc+v to edit a line in an editor
+autoload edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
 
 #if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
 #  exec startx
