@@ -11,6 +11,9 @@ set $mod Mod4
 new_window pixel 1
 new_float normal
 
+# Workaround as new_window does not seem to work for all windows
+for_window [class="^.*"] border pixel 1
+
 # Hide borders
 hide_edge_borders none
 
@@ -457,3 +460,4 @@ mode "$mode_gaps_outer" {
 
 # Background
 # exec_always feh --bg-scale ~/Downloads/m2.jpg
+
